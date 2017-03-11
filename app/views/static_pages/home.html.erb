@@ -1,7 +1,9 @@
 <div class="content-grid">
 	<% @cities.each do |city| %>
+	<%= link_to city_path(city) do %>
 		<div class="content-block">
 			<div class="content-title"><%= city.name %></div>
 		</div>
+		<% end %>
 	<% end %>
 </div>
