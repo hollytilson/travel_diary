@@ -1,4 +1,5 @@
 <p id="notice"><%= notice %></p>
-
-<%= link_to 'Edit', edit_review_path(@review) %> |
+<h1><%= @review.name %></h1>
+<div><%= image_tag @review.picture.url(:medium) %></div>
+<%= link_to 'Edit', edit_review_path(@review) %>|
 <%= link_to 'Back', reviews_path %>
